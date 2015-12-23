@@ -1,0 +1,27 @@
+.flexpaper_toolbarios{
+    height: 50px;
+
+    .flexpaper_tbbutton_large, .flexpaper_tblabel_large, .flexpaper_tbtextinput_large{
+        padding-left:6px;
+    }
+}
+
+#toolbar_documentViewer_annotations_container{
+    border: 0;
+    #toolbar_documentViewer_annotations{
+        border: 0;
+        margin:10px 10px;
+        height: 30px;
+        #annotationsToolbar{
+            border:0;
+            height:30px;
+            div{
+                height: 30px;
+                display: block;
+                padding: 0 5px;
+                background-size: 33px;
+            }
+        }
+    }
+}
+

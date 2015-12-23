@@ -1,0 +1,11 @@
+ionic state restore
+
+cordova plugin add cc.fovea.cordova.purchase --variable BILLING_KEY="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8WpWEzyZMePBFNrjtUQO7bxbgE/es7j/ZfKpmRZGNfYyV4unbnbmdNCuTUdyUz85nuMJnNk3xtvgnmyN0HnyBv1QPZSTk2+9LYnv/5FpGFwwr/gcNWF/mffaoifdjk84qCzFnG0IlL/HK0VhT2vUxacHbwNGVipKaSJnLbsNS7rUTwsVqQ0tYZLYA2wkVzVZz96oJJCYpkvwpW3U4SVXTm9Wbp/dz/2E91tHd5txDTG9aA73cEYhJqhXBdzB1dIIoS14B2JLa+WldhLjTc+fzuzAimhmJyrodcEcDBa58ZnfjaTETIy8Te9QKlnEk8XoPTBvn9F8tIBBRcI8edieGQIDAQAB"
+
+cordova plugin add cordova-plugin-splashscreen
+cordova plugin add cordova-plugin-console
+cordova plugin add cordova-plugin-device
+cordova plugin add cordova-plugin-file-transfer
+cordova plugin add cordova-plugin-file
+cordova plugin add cordova-plugin-whitelist
+cordova plugin add cordova-plugin-zip

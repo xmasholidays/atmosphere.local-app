@@ -1,0 +1,39 @@
+<ion-view view-title="Ebooks">
+
+    <ion-nav-buttons side="right">
+        <button class="button" ng-hide="searchVisible" ng-click="toggleSearch()">
+            <i class="icon ion-search"></i>
+        </button>
+    </ion-nav-buttons>
+
+    <div ng-show="searchVisible" class="bar bar-subheader item-input-inset">
+        <label class="item-input-wrapper">
+            <i class="icon ion-ios-search placeholder-icon"></i>
+            <input ng-model="searchString" type="search" placeholder="Search" focus-me="searchVisible" ng-change="performSearch()">
+        </label>
+        <button class="button button-clear" ng-click="toggleSearch()">
+            <i class="icon ion-close"></i>
+        </button>
+    </div>
+
+  <ion-content overflow-scroll="true">
+
+    <ion-list class="ebooks-list">
+        <div ng-repeat="audio in audios" class="ebook-container">
+            <ion-item href="#/app/ebooks/{{ebook.id}}" class="ebook">
+                <div class="img-container">
+                    <img ng-src="" fallback-src="img/nocover.png">
+                </div>
+
+                <h2>{{audio.title}}</h2>
+                <div class="info">
+                    <span class="level"></span>
+                    <span class="price"></span>
+                </div>
+            </ion-item>
+        </div>
+    </ion-list>
+
+  </ion-content>
+
+</ion-view>

@@ -1,0 +1,37 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-stable user-profile" ng-show="loggedIn">
+      <span class="user-name">{{user.firstname}} {{user.lastname}}</span>
+      <span class="user-email">{{user.email}} </span>
+    </ion-header-bar>
+    <ion-content class="menu-content">
+      <ion-list>
+        <ion-item menu-close href="#/app/ebooks">
+          Ebooks
+        </ion-item>
+        <ion-item menu-close ng-show="loggedIn" href="#/app/myebooks">
+          Acquistati
+        </ion-item>
+        <ion-item menu-toggle ng-hide="loggedIn" ng-click="login()">
+          Login
+        </ion-item>
+        <ion-item menu-toggle ng-show="loggedIn" ng-click="logout()">
+          Logout
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
